@@ -1,8 +1,12 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 function NavBar() {
   return (
-    <Box sx={{ p: 2 }} color="primary.light" backgroundColor="secondary.dark">
+    <Box
+      sx={{ p: 2 }}
+      color="primary.light"
+      backgroundColor="secondary.semiDark"
+    >
       <Grid container>
         <Grid item xs={4}>
           <Typography variant="h5">Site Name</Typography>

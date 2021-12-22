@@ -17,6 +17,7 @@ function App() {
       secondary: {
         light: "#ffe066",
         main: "#ffcc00",
+        semiDark: "#262626",
         dark: "#000000",
       },
     },
@@ -27,9 +28,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar />
         <About />
-        <br />
         <Services />
-        <br />
         <Questions />
       </ThemeProvider>
     </div>

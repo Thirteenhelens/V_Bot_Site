@@ -1,10 +1,10 @@
 import {
   Box,
-  Typography,
   Grid,
   Card,
-  CardContent,
   // CardMedia,
+  Typography,
+  CardContent,
 } from "@mui/material";
 
 function About() {
