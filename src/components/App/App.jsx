@@ -26,7 +26,6 @@ function App() {
     <div>
       <ThemeProvider theme={theme}>
         <NavBar />
-        <br />
         <About />
         <br />
         <Services />
