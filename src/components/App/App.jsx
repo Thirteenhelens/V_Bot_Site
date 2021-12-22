@@ -25,9 +25,12 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <NavBar/>
+        <NavBar />
+        <br />
         <About />
+        <br />
         <Services />
+        <br />
         <Questions />
       </ThemeProvider>
     </div>
