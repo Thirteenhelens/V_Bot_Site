@@ -1,6 +1,6 @@
 import "./App.css";
 import * as React from "react";
-import About from '../About/About.jsx';
+import About from "../About/About.jsx";
 import NavBar from "../NavBar/NavBar.jsx";
 import Services from "../Services/Services.jsx";
 import Questions from "../Questions/Questions.jsx";

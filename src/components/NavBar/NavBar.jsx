@@ -7,7 +7,7 @@ function NavBar() {
       color="primary.light"
       backgroundColor="secondary.semiDark"
     >
-      <Grid container>
+      <Grid container spacing={2}>
         <Grid item xs={4}>
           <Typography variant="h5">Site Name</Typography>
         </Grid>

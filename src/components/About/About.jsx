@@ -2,7 +2,6 @@ import {
   Box,
   Grid,
   Card,
-  // CardMedia,
   Typography,
   CardContent,
 } from "@mui/material";
@@ -17,11 +16,11 @@ function About() {
           <Typography variant="h3">About section</Typography>
         </Grid>
         {/*  */}
-        <Grid item xs={12}>
+        <Grid item xs={12} md={12}>
           <br />
         </Grid>
         {/*  */}
-        <Grid item xs={5}>
+        <Grid item xs={12} md={5}>
           <Card
             variant="outlined"
             sx={{
@@ -51,7 +50,7 @@ function About() {
         {/*  */}
         <Grid item xs={2}></Grid>
         {/*  */}
-        <Grid item xs={5}>
+        <Grid item xs={12} md={5}>
           <Card
             variant="outlined"
             sx={{
