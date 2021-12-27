@@ -7,6 +7,7 @@ import Questions from "../Questions/Questions.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function App() {
+  // Theme is what dictates the colors the site uses
   const theme = createTheme({
     palette: {
       primary: {
