@@ -1,4 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PaymentIcon from "@mui/icons-material/Payment";
 
 function NavBar() {
   return (
@@ -7,23 +9,25 @@ function NavBar() {
       color="primary.light"
       backgroundColor="secondary.semiDark"
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ textAlign: "center" }}>
         <Grid item xs={4}>
           <Typography variant="h5">Site Name</Typography>
         </Grid>
 
         <Grid item xs={5}></Grid>
 
-        <Grid item xs={1}>
+        {/* <Grid item xs={1}>
           <Typography>Link #1</Typography>
+        </Grid> */}
+
+        <Grid item xs={1}>
+          <PaymentIcon />
+          <Typography>Buy Service</Typography>
         </Grid>
 
         <Grid item xs={1}>
-          <Typography>Link #2</Typography>
-        </Grid>
-
-        <Grid item xs={1}>
-          <Typography> Link #3</Typography>
+          <GitHubIcon />
+          <Typography>Github</Typography>
         </Grid>
       </Grid>
     </Box>

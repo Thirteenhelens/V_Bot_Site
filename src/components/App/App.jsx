@@ -15,6 +15,9 @@ function App() {
         main: "#2eb82e",
         dark: "#145214",
       },
+      selected: {
+        color: "#ffe066",
+      },
       secondary: {
         light: "#ffe066",
         main: "#ffcc00",
