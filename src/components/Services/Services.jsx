@@ -60,7 +60,7 @@ function Services() {
           <BottomNavigation showLabels value={value} onChange={handleChange}>
             <BottomNavigationAction
               value="base"
-              label="Base Service"
+              label="Base Services"
               icon={<PrecisionManufacturingIcon />}
             />
             <BottomNavigationAction
@@ -80,44 +80,14 @@ function Services() {
             />
           </BottomNavigation>
         </Grid>
+        {/* End of Grid Item #3 */}
+        <Grid item sx={12}>
+          {currentView}
+        </Grid>
         {/* End of Grid Item #2 */}
-        <Grid item>{currentView}</Grid>
       </Grid>
     </Box>
   );
 }
 
 export default Services;
-
-// let value = 0;
-
-// function test0() {
-//   return (value = 0);
-// }
-// function test1() {
-//   return (value = 1);
-// }
-// function test2() {
-//   return (value = 2);
-// }
-// function test3() {
-//   return (value = 3);
-// }
-
-// switch (value) {
-//   case 0:
-//     console.log(value);
-//     break;
-//   case 1:
-//     console.log(value);
-//     break;
-//   case 2:
-//     console.log(value);
-//     break;
-//   case 3:
-//     console.log(value);
-//     break;
-//   default:
-//     console.log("error");
-//     break;
-// }
