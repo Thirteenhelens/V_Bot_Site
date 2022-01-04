@@ -23,7 +23,7 @@ function BaseService() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Basic Bot - $50
+              Custom bot - $50
             </Typography>
             <Typography variant="body2" color="text.secondary">
               With this purchase, you get a basic bot with 3 commands. You get 3
@@ -49,8 +49,10 @@ function BaseService() {
               Music Bot - $50
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              With this purchase, you get a music bot with 3 commands. EX: play
-              song, stop playing song...
+              This package is the essential music bot. With this package you
+              will receive a bot that can play music through YouTube links.
+              Comes with every necessary music bot command and api integrated
+              commands to create a fully functional music bot.
             </Typography>
           </CardContent>
           <CardActions>
@@ -72,8 +74,11 @@ function BaseService() {
               Moderation Bot - $50
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              With this purchase, you get a moderation bot with 3 commands. EX:
-              ban user, promote user...
+              This package is the essential moderation bot. With this package
+              you will receive a bot that can moderate a discord server through
+              commands that can only be used by specific members with the
+              permissions. Comes with every necessary moderation command to
+              create a fully functional moderation bot.
             </Typography>
           </CardContent>
           <CardActions>
