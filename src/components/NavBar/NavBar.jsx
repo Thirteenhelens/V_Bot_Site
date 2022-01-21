@@ -4,6 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PaymentIcon from "@mui/icons-material/Payment";
 
 function NavBar() {
+  const githubClick = () => console.log("GitHub!");
+  const paymentClick = () => console.log("Payment!");
+
   return (
     <Box
       sx={{ p: 2 }}
@@ -18,14 +21,14 @@ function NavBar() {
         <Grid item xs={3} md={8} />
 
         <Grid item xs={3} md={1}>
-          <IconButton sx={{ color: "primary.light" }}>
+          <IconButton sx={{ color: "primary.light" }} onClick={paymentClick}>
             <PaymentIcon />
           </IconButton>
           <Typography>Interested?</Typography>
         </Grid>
 
         <Grid item xs={2} md={1}>
-          <IconButton sx={{ color: "primary.light" }}>
+          <IconButton sx={{ color: "primary.light" }} onClick={githubClick}>
             <GitHubIcon />
           </IconButton>
           <Typography>Github</Typography>
