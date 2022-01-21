@@ -14,7 +14,7 @@ function NavBar() {
           <Typography variant="h5">Site Name</Typography>
         </Grid>
 
-        <Grid item xs={5}></Grid>
+        <Grid item xs={5} />
 
         {/* <Grid item xs={1}>
           <Typography>Link #1</Typography>
