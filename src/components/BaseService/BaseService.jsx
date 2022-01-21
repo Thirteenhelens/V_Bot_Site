@@ -71,7 +71,7 @@ function BaseService() {
         </Card>
       </Grid>
       {/* End of Grid item #2 */}
-      <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
+      <Grid item xs={4} sx={{ p: 2, textAlign: "center" }}>
         <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
           <CardMedia
             component="img"
