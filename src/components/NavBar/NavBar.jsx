@@ -1,4 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
+// MUI Imports:
+import { Box, Grid, Typography, IconButton } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PaymentIcon from "@mui/icons-material/Payment";
 
@@ -10,23 +11,23 @@ function NavBar() {
       backgroundColor="secondary.semiDark"
     >
       <Grid container spacing={2} sx={{ textAlign: "center" }}>
-        <Grid item xs={4}>
+        <Grid item xs={4} md={2}>
           <Typography variant="h5">Site Name</Typography>
         </Grid>
 
-        <Grid item xs={5} />
+        <Grid item xs={3} md={8} />
 
-        {/* <Grid item xs={1}>
-          <Typography>Link #1</Typography>
-        </Grid> */}
-
-        <Grid item xs={1}>
-          <PaymentIcon />
-          <Typography>Buy Service</Typography>
+        <Grid item xs={3} md={1}>
+          <IconButton sx={{ color: "primary.light" }}>
+            <PaymentIcon />
+          </IconButton>
+          <Typography>Interested?</Typography>
         </Grid>
 
-        <Grid item xs={1}>
-          <GitHubIcon />
+        <Grid item xs={2} md={1}>
+          <IconButton sx={{ color: "primary.light" }}>
+            <GitHubIcon />
+          </IconButton>
           <Typography>Github</Typography>
         </Grid>
       </Grid>
