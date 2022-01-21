@@ -54,7 +54,7 @@ function Services() {
       <Grid container>
         {/* Start of Container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">Services Section</Typography>
+          <Typography variant="h3">Services:</Typography>
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
