@@ -8,7 +8,7 @@ function About() {
       <Grid container>
         {/* Start of container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">About Section</Typography>
+          <Typography variant="h3">About us:</Typography>
         </Grid>
         {/* End Grid Item #1 */}
         <Grid item xs={12} md={12}>
@@ -48,7 +48,7 @@ function About() {
           </Card>
         </Grid>
         {/* End of Grid Item #3 */}
-        <Grid item xs={2}></Grid>
+        <Grid item xs={2} />
         {/* End of Grid Item #4 */}
         <Grid item xs={12} md={5}>
           <Card
@@ -76,7 +76,7 @@ function About() {
                 here. I enjoy programming and cannot wait for the challenges
                 that freelancing will put forth for me. So please feel free to
                 contact me if you have any questions relating to my services and
-                I will gladly get back to you as soon as I can. Also, feel free
+                I will gladly get back to you as soon as I can. Also feel free
                 to check out my GitHub to see what other projects I’m currently
                 working on!
               </Typography>
