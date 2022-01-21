@@ -14,7 +14,7 @@ function AddCmdService() {
     <Grid container>
       {/* <Grid item sx={3} /> */}
       <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
           <CardMedia
             component="img"
             height="200"
@@ -22,11 +22,18 @@ function AddCmdService() {
             alt="Discord Bot Image"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{ color: "primary.main" }}
+            >
               Additional Command - $10
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              With this purchase, you get another command for your bot. If you already have a bot, it's $10. If you are buying a bot, this will add $10 to your purchase.
+            <Typography variant="body2" sx={{ color: "secondary.main" }}>
+              With this purchase, you get another command for your bot. If you
+              already have a bot, it's $10. If you are buying a bot, this will
+              add $10 to your purchase.
             </Typography>
           </CardContent>
           <CardActions>

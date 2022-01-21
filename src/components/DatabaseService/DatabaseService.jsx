@@ -14,7 +14,7 @@ function DatabaseService() {
     <Grid container>
       {/* <Grid item sx={3} /> */}
       <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
           <CardMedia
             component="img"
             height="200"
@@ -22,10 +22,15 @@ function DatabaseService() {
             alt="Discord Bot Image"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{ color: "primary.main" }}
+            >
               Database connection or API command - $15
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" sx={{ color: "secondary.main" }}>
               LMAO you just get rolled, loser.
             </Typography>
           </CardContent>

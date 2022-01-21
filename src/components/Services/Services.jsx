@@ -58,7 +58,20 @@ function Services() {
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
-          <BottomNavigation showLabels value={value} onChange={handleChange}>
+          <BottomNavigation
+            showLabels
+            value={value}
+            onChange={handleChange}
+            sx={{
+              backgroundColor: "secondary.dark",
+              "& .MuiBottomNavigationAction-root": {
+                color: "selected.color",
+              },
+              "& .Mui-selected, .Mui-selected > svg": {
+                color: "primary.light",
+              },
+            }}
+          >
             <BottomNavigationAction
               value="base"
               label="Base Services"

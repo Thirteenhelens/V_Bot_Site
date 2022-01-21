@@ -14,7 +14,7 @@ function HostingService() {
     <Grid container>
       {/* <Grid item sx={3} /> */}
       <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
           <CardMedia
             component="img"
             height="200"
@@ -22,11 +22,17 @@ function HostingService() {
             alt="Discord Bot Image"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              sx={{ color: "primary.main" }}
+            >
               Hosting Service - $12.25
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              You can get ur bot hosted with this.
+            <Typography variant="body2" sx={{ color: "secondary.main" }}>
+              You will get bot hosted with this, for 12 months. Recurring
+              payments can be setup or removed by request.
             </Typography>
           </CardContent>
           <CardActions>
