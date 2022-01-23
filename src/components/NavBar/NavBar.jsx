@@ -18,14 +18,22 @@ function NavBar() {
         <Grid item xs={3} md={8} />
 
         <Grid item xs={3} md={1}>
-          <IconButton sx={{ color: "primary.light" }}>
+          <IconButton
+            sx={{ color: "primary.light" }}
+            onClick={() => console.log("Linking to Google form")}
+          >
             <PaymentIcon />
           </IconButton>
           <Typography>Interested?</Typography>
         </Grid>
 
         <Grid item xs={2} md={1}>
-          <IconButton sx={{ color: "primary.light" }}>
+          <IconButton
+            sx={{ color: "primary.light" }}
+            onClick={() => {
+              window.open("https://github.com/v0ncent");
+            }}
+          >
             <GitHubIcon />
           </IconButton>
           <Typography>Github</Typography>
