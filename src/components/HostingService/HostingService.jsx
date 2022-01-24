@@ -16,7 +16,7 @@ function HostingService() {
     <Grid container>
       {cardText.map((bot, i) => {
         return (
-          <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
+          <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
             <HostingServiceItem key={i} bot={bot} />
           </Grid>
         );
