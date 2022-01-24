@@ -9,23 +9,22 @@ import {
   BottomNavigation,
   BottomNavigationAction,
 } from "@mui/material";
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 // Outside file Imports
 import Base from "../BaseService/BaseService";
+import Additional from "../CustomBot/CustomBot";
 import Hosting from "../HostingService/HostingService";
-import Additional from "../AddCmdService/AddCmdService";
-import Database from "../DatabaseService/DatabaseService";
 
 // Icons Imports
-import ApiIcon from "@mui/icons-material/Api";
-import AddIcon from "@mui/icons-material/Add";
 import StorageIcon from "@mui/icons-material/Storage";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 
 function Services() {
-  let currentView = <></>;
+  let currentView;
+
   const [value, setValue] = React.useState("base");
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -34,11 +33,8 @@ function Services() {
     case "base":
       currentView = <Base />;
       break;
-    case "additional":
+    case "custom":
       currentView = <Additional />;
-      break;
-    case "database":
-      currentView = <Database />;
       break;
     case "hosting":
       currentView = <Hosting />;
@@ -78,14 +74,9 @@ function Services() {
               icon={<PrecisionManufacturingIcon />}
             />
             <BottomNavigationAction
-              icon={<AddIcon />}
-              value="additional"
-              label="Additional Command"
-            />
-            <BottomNavigationAction
-              value="database"
-              icon={<ApiIcon />}
-              label="Database or API"
+              value="custom"
+              label="Custom Bot"
+              icon={<AutoAwesomeIcon />}
             />
             <BottomNavigationAction
               value="hosting"
