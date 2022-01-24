@@ -5,8 +5,6 @@ import NavBar from "../NavBar/NavBar.jsx";
 import Services from "../Services/Services.jsx";
 import Questions from "../Questions/Questions.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// NEEDED????
-import { Grid } from "@mui/material";
 
 function App() {
   // Theme is what dictates the colors the site uses
@@ -30,25 +28,12 @@ function App() {
   });
 
   return (
-    <Grid container>
       <ThemeProvider theme={theme}>
-        <Grid item xs={12}>
           <NavBar />
-        </Grid>
-
-        <Grid item xs={12}>
           <About />
-        </Grid>
-
-        <Grid item xs={12}>
           <Services />
-        </Grid>
-
-        <Grid item xs={12}>
           <Questions />
-        </Grid>
       </ThemeProvider>
-    </Grid>
   );
 }
 
