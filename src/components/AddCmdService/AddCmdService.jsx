@@ -12,7 +12,6 @@ import {
 function AddCmdService() {
   return (
     <Grid container>
-      {/* <Grid item sx={3} /> */}
       <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
         <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
           <CardMedia
@@ -41,7 +40,6 @@ function AddCmdService() {
           </CardActions>
         </Card>
       </Grid>
-      {/*  <Grid item sx={3} /> */}
     </Grid>
   );
 }

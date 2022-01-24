@@ -95,7 +95,7 @@ function Services() {
           </BottomNavigation>
         </Grid>
         {/* End of Grid Item #3 */}
-        <Grid item sx={12}>
+        <Grid item xs={12}>
           {currentView}
         </Grid>
         {/* End of Grid Item #2 */}
