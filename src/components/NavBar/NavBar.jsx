@@ -4,6 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PaymentIcon from "@mui/icons-material/Payment";
 
 function NavBar() {
+  const githubClick = () => console.log("GitHub!");
+  const paymentClick = () => console.log("Payment!");
+
   return (
     <Box
       sx={{ p: 2 }}
