@@ -28,14 +28,12 @@ function App() {
   });
 
   return (
-    <div>
       <ThemeProvider theme={theme}>
-        <NavBar />
-        <About />
-        <Services />
-        <Questions />
+          <NavBar />
+          <About />
+          <Services />
+          <Questions />
       </ThemeProvider>
-    </div>
   );
 }
 

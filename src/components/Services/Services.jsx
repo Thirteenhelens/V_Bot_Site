@@ -54,7 +54,7 @@ function Services() {
       <Grid container>
         {/* Start of Container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">Services:</Typography>
+          <Typography variant="h3">Services</Typography>
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
@@ -95,7 +95,7 @@ function Services() {
           </BottomNavigation>
         </Grid>
         {/* End of Grid Item #3 */}
-        <Grid item sx={12}>
+        <Grid item xs={12}>
           {currentView}
         </Grid>
         {/* End of Grid Item #2 */}
