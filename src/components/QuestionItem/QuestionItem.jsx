@@ -48,9 +48,9 @@ function QuestionItem({ a, q }) {
           onClick={handleExpandClick}
         >
           {expanded ? (
-            <RemoveCircleRoundedIcon sx={{ color: "primary.main" }} />
+            <RemoveCircleRoundedIcon sx={{ color: "secondary.main" }} />
           ) : (
-            <AddCircleRoundedIcon sx={{ color: "secondary.main" }} />
+            <AddCircleRoundedIcon sx={{ color: "primary.main" }} />
           )}
         </ExpandMore>
       </CardActions>
