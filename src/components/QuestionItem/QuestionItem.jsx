@@ -16,7 +16,7 @@ import {
 import AddCircleRoundedIcon from "@mui/icons-material/AddCircleRounded";
 import RemoveCircleRoundedIcon from "@mui/icons-material/RemoveCircleRounded";
 
-function QuestionItem({ a, q }) {
+function QuestionItem({ item }) {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -33,11 +33,12 @@ function QuestionItem({ a, q }) {
       duration: theme.transitions.duration.shortest,
     }),
   }));
+
   return (
     <Card variant="outlined" sx={{ backgroundColor: "secondary.semiDark" }}>
       <CardContent onClick={handleExpandClick}>
         <Typography variant="body2" color="primary.light">
-          {q}
+          {item.question}
         </Typography>
       </CardContent>
       <CardActions>
@@ -56,7 +57,9 @@ function QuestionItem({ a, q }) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography sx={{ color: "secondary.main" }}>{a}</Typography>
+          <Typography sx={{ color: "secondary.main" }}>
+            {item.answer}
+          </Typography>
         </CardContent>
       </Collapse>
     </Card>

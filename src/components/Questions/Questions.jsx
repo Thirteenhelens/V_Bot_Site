@@ -6,8 +6,20 @@ import { Box, Grid, Typography } from "@mui/material";
 import QuestionItem from "../QuestionItem/QuestionItem";
 
 function Questions() {
-  const answers = ["p", "l", "a", "c", "e", "h", "o", "l", "d", "e", "r"];
-  const questions = ["p", "l", "a", "c", "e", "h", "o", "l", "d", "e", "r"];
+  const faqs = [
+    { question: "p", answer: "p" },
+    { question: "p", answer: "l" },
+    { question: "p", answer: "a" },
+    { question: "p", answer: "c" },
+    { question: "p", answer: "e" },
+    { question: "p", answer: "h" },
+    { question: "p", answer: "o" },
+    { question: "p", answer: "l" },
+    { question: "p", answer: "d" },
+    { question: "p", answer: "e" },
+    { question: "p", answer: "r" },
+  ];
+  
   return (
     <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2 }}>
       <Grid container sx={{ p: 4 }}>
@@ -15,8 +27,8 @@ function Questions() {
           <Typography variant="h3">FAQs:</Typography>
         </Grid>
         <Grid item xs={12}>
-          {questions.map((question, i) => {
-            return <QuestionItem a={answers} q={question} key={i} />;
+          {faqs.map((item, i) => {
+            return <QuestionItem item={item} key={i} />;
           })}
         </Grid>
       </Grid>
