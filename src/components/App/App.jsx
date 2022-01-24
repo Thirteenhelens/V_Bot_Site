@@ -1,4 +1,4 @@
-import "./App.css";
+// Importing React, all Local files, and Theme creation tools
 import * as React from "react";
 import About from "../About/About.jsx";
 import NavBar from "../NavBar/NavBar.jsx";

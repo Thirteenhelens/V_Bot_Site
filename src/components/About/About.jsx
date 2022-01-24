@@ -19,17 +19,13 @@ function About() {
           <Card
             variant="outlined"
             sx={{
+              textAlign: "center",
               color: "primary.light",
               backgroundColor: "secondary.dark",
             }}
           >
             <CardContent>
-              <Typography
-                gutterBottom
-                variant="h4"
-                component="div"
-                className="centerTxt"
-              >
+              <Typography gutterBottom variant="h4" component="div">
                 What is this site?
               </Typography>
               <Typography variant="body1" sx={{ color: "secondary.light" }}>
@@ -39,7 +35,7 @@ function About() {
                 of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
+                popularized in the 1960s with the release of Letraset sheets
                 containing Lorem Ipsum passages, and more recently with desktop
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
@@ -54,17 +50,13 @@ function About() {
           <Card
             variant="outlined"
             sx={{
+              textAlign: "center",
               color: "primary.light",
               backgroundColor: "secondary.dark",
             }}
           >
             <CardContent>
-              <Typography
-                gutterBottom
-                variant="h4"
-                component="div"
-                className="centerTxt"
-              >
+              <Typography gutterBottom variant="h4" component="div">
                 Who makes this stuff?
               </Typography>
               <Typography variant="body1" sx={{ color: "secondary.light" }}>

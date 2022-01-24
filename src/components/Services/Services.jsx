@@ -16,8 +16,8 @@ import Additional from "../CustomBot/CustomBot";
 import Hosting from "../HostingService/HostingService";
 
 // Icons Imports
-import EditIcon from "@mui/icons-material/Edit";
 import StorageIcon from "@mui/icons-material/Storage";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 
 function Services() {
@@ -76,7 +76,7 @@ function Services() {
             <BottomNavigationAction
               value="custom"
               label="Custom Bot"
-              icon={<EditIcon />}
+              icon={<AutoAwesomeIcon />}
             />
             <BottomNavigationAction
               value="hosting"

@@ -10,7 +10,12 @@ import {
 
 function BasicBotItem({ bot }) {
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor: "secondary.semiDark" }}>
+    <Card
+      sx={{
+        maxWidth: 345,
+        backgroundColor: "secondary.semiDark",
+      }}
+    >
       <CardMedia
         height="200"
         component="img"
