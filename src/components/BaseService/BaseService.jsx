@@ -24,11 +24,13 @@ function BaseService() {
 
   return (
     <Grid container>
-      <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
-        {cardText.map((bot, i) => {
-          return <BasicBotItem key={i} bot={bot} />;
-        })}
-      </Grid>
+      {cardText.map((bot, i) => {
+        return (
+          <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
+            <BasicBotItem key={i} bot={bot} />
+          </Grid>
+        );
+      })}
     </Grid>
   );
 }

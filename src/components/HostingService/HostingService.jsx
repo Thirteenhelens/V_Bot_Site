@@ -14,11 +14,13 @@ function HostingService() {
 
   return (
     <Grid container>
-      <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
-        {cardText.map((bot, i) => {
-          return <HostingServiceItem key={i} bot={bot} />;
-        })}
-      </Grid>
+      {cardText.map((bot, i) => {
+        return (
+          <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
+            <HostingServiceItem key={i} bot={bot} />
+          </Grid>
+        );
+      })}
     </Grid>
   );
 }

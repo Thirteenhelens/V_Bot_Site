@@ -12,8 +12,8 @@ import {
 
 // Outside file Imports
 import Base from "../BaseService/BaseService";
-import Hosting from "../HostingService/HostingService";
 import Additional from "../CustomBot/CustomBot";
+import Hosting from "../HostingService/HostingService";
 
 // Icons Imports
 import EditIcon from "@mui/icons-material/Edit";
@@ -21,8 +21,10 @@ import StorageIcon from "@mui/icons-material/Storage";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 
 function Services() {
-  let currentView = <></>;
+  let currentView;
+
   const [value, setValue] = React.useState("base");
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
