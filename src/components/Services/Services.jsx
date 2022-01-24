@@ -9,17 +9,14 @@ import {
   BottomNavigation,
   BottomNavigationAction,
 } from "@mui/material";
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 // Outside file Imports
 import Base from "../BaseService/BaseService";
 import Hosting from "../HostingService/HostingService";
 import Additional from "../AddCmdService/AddCmdService";
-import Database from "../DatabaseService/DatabaseService";
 
 // Icons Imports
-import ApiIcon from "@mui/icons-material/Api";
-import AddIcon from "@mui/icons-material/Add";
+import EditIcon from "@mui/icons-material/Edit";
 import StorageIcon from "@mui/icons-material/Storage";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 
@@ -34,11 +31,8 @@ function Services() {
     case "base":
       currentView = <Base />;
       break;
-    case "additional":
+    case "custom":
       currentView = <Additional />;
-      break;
-    case "database":
-      currentView = <Database />;
       break;
     case "hosting":
       currentView = <Hosting />;
@@ -78,14 +72,9 @@ function Services() {
               icon={<PrecisionManufacturingIcon />}
             />
             <BottomNavigationAction
-              icon={<AddIcon />}
-              value="additional"
-              label="Additional Command"
-            />
-            <BottomNavigationAction
-              value="database"
-              icon={<ApiIcon />}
-              label="Database or API"
+              icon={<EditIcon />}
+              value="custom"
+              label="Custom Bot"
             />
             <BottomNavigationAction
               value="hosting"
