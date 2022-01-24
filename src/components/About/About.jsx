@@ -8,7 +8,7 @@ function About() {
       <Grid container>
         {/* Start of container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">About us:</Typography>
+          <Typography variant="h3">About</Typography>
         </Grid>
         {/* End Grid Item #1 */}
         <Grid item xs={12} md={12}>
@@ -26,13 +26,13 @@ function About() {
             <CardContent>
               <Typography
                 gutterBottom
-                variant="h5"
+                variant="h4"
                 component="div"
                 className="centerTxt"
               >
                 What is this site?
               </Typography>
-              <Typography variant="body2" sx={{ color: "secondary.light" }}>
+              <Typography variant="body1" sx={{ color: "secondary.light" }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -61,13 +61,13 @@ function About() {
             <CardContent>
               <Typography
                 gutterBottom
-                variant="h5"
+                variant="h4"
                 component="div"
                 className="centerTxt"
               >
                 Who makes this stuff?
               </Typography>
-              <Typography variant="body2" sx={{ color: "secondary.light" }}>
+              <Typography variant="body1" sx={{ color: "secondary.light" }}>
                 Hello and welcome to my freelance discord bot site! My name is
                 Vincent but everyone calls me Vinny. I am a computer science
                 student currently studying at university looking to expand my

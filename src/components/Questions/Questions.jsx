@@ -7,7 +7,7 @@ import QuestionItem from "../QuestionItem/QuestionItem";
 
 function Questions() {
   const faqs = [
-    { question: "p", answer: "p" },
+    { question: "This is a placeholder question", answer: "This is a placeholder answer" },
     { question: "p", answer: "l" },
     { question: "p", answer: "a" },
     { question: "p", answer: "c" },
@@ -22,9 +22,9 @@ function Questions() {
   
   return (
     <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2 }}>
-      <Grid container sx={{ p: 4 }}>
-        <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">FAQs:</Typography>
+      <Grid container rowSpacing={1} sx={{ p: 4 }}>
+        <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
+          <Typography variant="h3">FAQs</Typography>
         </Grid>
         <Grid item xs={12}>
           {faqs.map((item, i) => {

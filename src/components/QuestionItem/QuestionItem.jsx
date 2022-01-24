@@ -37,7 +37,7 @@ function QuestionItem({ item }) {
   return (
     <Card variant="outlined" sx={{ backgroundColor: "secondary.semiDark" }}>
       <CardContent onClick={handleExpandClick}>
-        <Typography variant="body2" color="primary.light">
+        <Typography variant="h5" color="primary.main">
           {item.question}
         </Typography>
       </CardContent>
@@ -57,7 +57,7 @@ function QuestionItem({ item }) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography sx={{ color: "secondary.main" }}>
+          <Typography variant="subtitle1" sx={{ color: "secondary.main" }}>
             {item.answer}
           </Typography>
         </CardContent>
