@@ -13,7 +13,7 @@ import {
 // Outside file Imports
 import Base from "../BaseService/BaseService";
 import Hosting from "../HostingService/HostingService";
-import Additional from "../AddCmdService/AddCmdService";
+import Additional from "../CustomBot/CustomBot";
 
 // Icons Imports
 import EditIcon from "@mui/icons-material/Edit";
@@ -72,9 +72,9 @@ function Services() {
               icon={<PrecisionManufacturingIcon />}
             />
             <BottomNavigationAction
-              icon={<EditIcon />}
               value="custom"
               label="Custom Bot"
+              icon={<EditIcon />}
             />
             <BottomNavigationAction
               value="hosting"

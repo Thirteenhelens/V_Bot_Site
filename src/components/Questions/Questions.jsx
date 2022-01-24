@@ -3,7 +3,7 @@ import React from "react";
 // MUI Imports
 import { Box, Grid, Typography } from "@mui/material";
 // Local File Import
-import QuestionItem from "../QuestionItem/QuestionItem";
+import QuestionItem from "./QuestionItem";
 
 function Questions() {
   const faqs = [

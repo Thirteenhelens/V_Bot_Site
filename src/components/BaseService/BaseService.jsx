@@ -5,10 +5,6 @@ import BasicBotItem from "./BaseServiceItem";
 
 function BaseService() {
   const cardText = [
-    // {
-    //   title: "Custom Bot - $50",
-    //   text: "With this purchase, you get a basic bot with 3 commands. You get 3 commands customized by you.",
-    // },
     {
       title: "Music Bot - $50",
       text: `This package is the essential music bot. With this package you
@@ -27,7 +23,7 @@ function BaseService() {
   ];
 
   return (
-    <Grid container >
+    <Grid container>
       <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
         {cardText.map((bot, i) => {
           return <BasicBotItem key={i} bot={bot} />;
