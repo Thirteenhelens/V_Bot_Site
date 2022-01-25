@@ -3,7 +3,7 @@ import { Box, Grid, Card, Typography, CardContent } from "@mui/material";
 
 function About() {
   return (
-    <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2 }}>
+    <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2, height:2/2 }}>
       {/* Start of Box */}
       <Grid container>
         {/* Start of container */}
