@@ -7,8 +7,12 @@ import {
   CardActions,
   CardContent,
 } from "@mui/material";
+// React Router Import
+import { useNavigate } from "react-router-dom";
 
 function BasicBotItem({ bot }) {
+  // Navigate is how to change URL
+  const navigate = useNavigate();
   return (
     <Card
       sx={{
@@ -36,7 +40,9 @@ function BasicBotItem({ bot }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Sign Up Form</Button>
+        <Button size="small" onClick={() => navigate("/form")}>
+          Sign Up Form
+        </Button>
       </CardActions>
     </Card>
   );

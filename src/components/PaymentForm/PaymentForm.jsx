@@ -1,9 +1,11 @@
 // React Router Import
 import { useNavigate } from "react-router-dom";
 // MUI Imports
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Box, Button, Grid, Typography } from "@mui/material";
 
 function PaymentForm() {
+  // Navigate changes the URL
   const navigate = useNavigate();
 
   return (
@@ -30,8 +32,9 @@ function PaymentForm() {
         <Grid item md={12} sx={{ textAlign: "center" }}>
           <Button
             size="large"
+            color="secondary"
             variant="contained"
-            // color="secondary.main"
+            startIcon={<ArrowBackIcon/>}
             onClick={() => navigate("/")}
           >
             Back
