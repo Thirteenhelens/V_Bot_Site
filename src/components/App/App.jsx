@@ -1,11 +1,6 @@
 // React Imports
 import * as React from "react";
-import {
-  BrowserRouter,
-  HashRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Theme Imports for Styling
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -37,14 +32,16 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          {/* ContentView is the main content of the site. */}
-          <Route path="/" element={<ContentView />} />
-          {/* FormView just displays the Google Form */}
-          <Route path="/form" element={<FormView />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            {/* ContentView is the main content of the site. */}
+            <Route path="/" element={<ContentView />} />
+            {/* FormView just displays the Google Form */}
+            <Route path="/form" element={<FormView />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </ThemeProvider>
   );
 }
