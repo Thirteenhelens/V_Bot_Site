@@ -26,8 +26,8 @@ function BaseService() {
     <Grid container>
       {cardText.map((bot, i) => {
         return (
-          <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
-            <BasicBotItem key={i} bot={bot} />
+          <Grid item xs={12} md={4} key={i} sx={{ p: 2, textAlign: "center" }}>
+            <BasicBotItem bot={bot} />
           </Grid>
         );
       })}

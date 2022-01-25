@@ -3,9 +3,9 @@ import { Box, Grid, Typography, IconButton } from "@mui/material";
 // MUI Icons Imports
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PaymentIcon from "@mui/icons-material/Payment";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-
   return (
     <Box
       sx={{ p: 2 }}
@@ -22,7 +22,7 @@ function NavBar() {
         <Grid item xs={3} md={1}>
           <IconButton
             sx={{ color: "primary.light" }}
-            onClick={() => console.log("Linking to Google form")}
+            onClick={() => <Link to="/form" />}
           >
             <PaymentIcon />
           </IconButton>
