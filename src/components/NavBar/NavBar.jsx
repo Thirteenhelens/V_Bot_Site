@@ -1,3 +1,5 @@
+// React Router Import
+import { useNavigate } from "react-router-dom";
 // MUI Imports
 import { Box, Grid, Typography, IconButton } from "@mui/material";
 // MUI Icons Imports
@@ -5,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PaymentIcon from "@mui/icons-material/Payment";
 
 function NavBar() {
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -19,11 +22,8 @@ function NavBar() {
 
         <Grid item xs={3} md={8} />
 
-        <Grid item xs={3} md={1}>
-          <IconButton
-            sx={{ color: "primary.light" }}
-            onClick={() => console.log("Linking to Google form")}
-          >
+        <Grid item xs={3} md={1} onClick={() => navigate("/form")}>
+          <IconButton sx={{ color: "primary.light" }}>
             <PaymentIcon />
           </IconButton>
           <Typography>Interested?</Typography>

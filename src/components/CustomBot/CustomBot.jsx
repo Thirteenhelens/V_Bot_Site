@@ -1,5 +1,5 @@
 // MUI Import
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 // Local Import
 import CustomBotItem from "./CustomBotItem";
 
@@ -24,10 +24,13 @@ function AddCmdService() {
 
   return (
     <Grid container>
+      <Grid item xs={12} sx={{ textAlign: "left", pl: 2 }}>
+        <Typography variant="h5">Custom Bot Services:</Typography>
+      </Grid>
       {cardText.map((bot, i) => {
         return (
-          <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
-            <CustomBotItem key={i} bot={bot} />
+          <Grid item xs={12} md={4} key={i} sx={{ p: 2, textAlign: "center" }}>
+            <CustomBotItem bot={bot} />
           </Grid>
         );
       })}
