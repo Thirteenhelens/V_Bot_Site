@@ -50,7 +50,18 @@ function Services() {
       <Grid container>
         {/* Start of Container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">Services</Typography>
+          <Box
+            borderRadius={10}
+            sx={{
+              backgroundColor: "primary.dark",
+              "&:hover": {
+                backgroundColor: "secondary.semiDark",
+                opacity: [0.9, 0.8, 0.7],
+              },
+            }}
+          >
+            <Typography variant="h3">Services</Typography>
+          </Box>
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
