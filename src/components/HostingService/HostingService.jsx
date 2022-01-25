@@ -1,5 +1,5 @@
 // MUI Import
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 // Local Import
 import HostingServiceItem from "./HostingServiceItem";
 
@@ -14,6 +14,9 @@ function HostingService() {
 
   return (
     <Grid container>
+      <Grid item xs={12} sx={{ textAlign: "left", pl:2 }}>
+        <Typography variant="h5">Hosting Service:</Typography>
+      </Grid>
       {cardText.map((bot, i) => {
         return (
           <Grid item xs={12} key={i} sx={{ p: 2, textAlign: "center" }}>
