@@ -1,10 +1,13 @@
-// Importing React, all Local files, and Theme creation tools
+// React Imports
 import * as React from "react";
-import About from "../About/About.jsx";
-import NavBar from "../NavBar/NavBar.jsx";
-import Services from "../Services/Services.jsx";
-import Questions from "../Questions/Questions.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Theme Imports for Styling
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+// Local File Imports
+import FormView from "../FormView/FormView.jsx";
+import ContentView from "../ContentView/ContentView.jsx";
 
 function App() {
   // Theme is what dictates the colors the site uses
@@ -28,12 +31,18 @@ function App() {
   });
 
   return (
-      <ThemeProvider theme={theme}>
-          <NavBar />
-          <About />
-          <Services />
-          <Questions />
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            {/* ContentView is the main content of the site. */}
+            <Route path="/" element={<ContentView />} />
+            {/* FormView just displays the Google Form */}
+            <Route path="/form" element={<FormView />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 
