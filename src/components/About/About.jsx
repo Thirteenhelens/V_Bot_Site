@@ -3,12 +3,27 @@ import { Box, Grid, Card, Typography, CardContent } from "@mui/material";
 
 function About() {
   return (
-    <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2, height:2/2 }}>
+    <Box
+      color="primary.light"
+      backgroundColor="secondary.dark"
+      sx={{ p: 2, height: 2 / 2 }}
+    >
       {/* Start of Box */}
       <Grid container>
         {/* Start of container */}
         <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
-          <Typography variant="h3">About</Typography>
+          <Box
+            borderRadius={10}
+            sx={{
+              backgroundColor: "primary.dark",
+              "&:hover": {
+                backgroundColor: "secondary.semiDark",
+                opacity: [0.9, 0.8, 0.7],
+              },
+            }}
+          >
+            <Typography variant="h3">About</Typography>
+          </Box>
         </Grid>
         {/* End Grid Item #1 */}
         <Grid item xs={12} md={12}>

@@ -27,7 +27,18 @@ function Questions() {
     <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2 }}>
       <Grid container rowSpacing={1} sx={{ p: 4 }}>
         <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
-          <Typography variant="h3">FAQs</Typography>
+          <Box
+            borderRadius={10}
+            sx={{
+              backgroundColor: "primary.dark",
+              "&:hover": {
+                backgroundColor: "secondary.semiDark",
+                opacity: [0.9, 0.8, 0.7],
+              },
+            }}
+          >
+            <Typography variant="h3">FAQs</Typography>
+          </Box>
         </Grid>
         {faqs.map((item, i) => {
           return (
