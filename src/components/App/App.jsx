@@ -6,6 +6,9 @@ import Services from "../Services/Services.jsx";
 import Questions from "../Questions/Questions.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+// ?????????????????????????????????????????
+// import Webpages from "../webpages/index.js";
+
 function App() {
   // Theme is what dictates the colors the site uses
   const theme = createTheme({
@@ -28,12 +31,14 @@ function App() {
   });
 
   return (
-      <ThemeProvider theme={theme}>
-          <NavBar />
-          <About />
-          <Services />
-          <Questions />
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      {/* <Webpages/> */}
+      {/* Listing all components to display on the screen, Route could be added here for on-page links :) */}
+      <NavBar />
+      <About />
+      <Services />
+      <Questions />
+    </ThemeProvider>
   );
 }
 
