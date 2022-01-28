@@ -60,7 +60,9 @@ function Services() {
               },
             }}
           >
-            <Typography variant="h3">Services</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              Services
+            </Typography>
           </Box>
         </Grid>
         {/* End of Grid Item #1 */}

@@ -37,7 +37,9 @@ function Questions() {
               },
             }}
           >
-            <Typography variant="h3">FAQs</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              FAQs
+            </Typography>
           </Box>
         </Grid>
         {faqs.map((item, i) => {
