@@ -29,6 +29,7 @@ function Services() {
     setValue(newValue);
   };
 
+  // This is a router (basically) to handle the changing of views when buttons on the bottom navigation are selected.
   switch (value) {
     case "base":
       currentView = <Base />;
@@ -53,11 +54,7 @@ function Services() {
           <Box
             borderRadius={10}
             sx={{
-              backgroundColor: "primary.dark",
-              "&:hover": {
-                backgroundColor: "secondary.semiDark",
-                opacity: [0.9, 0.8, 0.7],
-              },
+              backgroundColor: "primary.main",
             }}
           >
             <Typography variant="h3" sx={{ color: "secondary.dark" }}>
