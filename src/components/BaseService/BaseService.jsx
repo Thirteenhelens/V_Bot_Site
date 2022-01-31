@@ -25,7 +25,7 @@ function BaseService() {
   return (
     <Grid container>
       <Grid item xs={12} sx={{ textAlign: "left", pl: 2 }}>
-        <Typography variant="h5">Base Services:</Typography>
+        <Typography variant="h4">Base Services:</Typography>
       </Grid>
       {cardText.map((bot, i) => {
         return (

@@ -23,7 +23,7 @@ function BasicBotItem({ bot }) {
       <CardMedia
         height="200"
         component="img"
-        alt="Discord Bot Image"
+        alt="Simple // placeholder Discord Bot Image"
         image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2.wp.com%2Fbeebom.com%2Fwp-content%2Fuploads%2F2018%2F02%2Fdiscord-bots.jpg%3Ffit%3D750%252C500%26ssl%3D1&f=1&nofb=1"
       />
       <CardContent>

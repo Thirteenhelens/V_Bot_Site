@@ -29,6 +29,7 @@ function Services() {
     setValue(newValue);
   };
 
+  // This is a router (basically) to handle the changing of views when buttons on the bottom navigation are selected.
   switch (value) {
     case "base":
       currentView = <Base />;
@@ -53,48 +54,48 @@ function Services() {
           <Box
             borderRadius={10}
             sx={{
-              backgroundColor: "primary.dark",
-              "&:hover": {
-                backgroundColor: "secondary.semiDark",
-                opacity: [0.9, 0.8, 0.7],
-              },
+              backgroundColor: "primary.main",
             }}
           >
-            <Typography variant="h3">Services</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              Services
+            </Typography>
           </Box>
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
-          <BottomNavigation
-            showLabels
-            value={value}
-            onChange={handleChange}
-            sx={{
-              backgroundColor: "secondary.dark",
-              "& .MuiBottomNavigationAction-root": {
-                color: "selected.color",
-              },
-              "& .Mui-selected, .Mui-selected > svg": {
-                color: "primary.light",
-              },
-            }}
-          >
-            <BottomNavigationAction
-              value="base"
-              label="Base Services"
-              icon={<PrecisionManufacturingIcon />}
-            />
-            <BottomNavigationAction
-              value="custom"
-              label="Custom Bot"
-              icon={<AutoAwesomeIcon />}
-            />
-            <BottomNavigationAction
-              value="hosting"
-              icon={<StorageIcon />}
-              label="Year of hosting"
-            />
-          </BottomNavigation>
+          <div role="navigation">
+            <BottomNavigation
+              showLabels
+              value={value}
+              onChange={handleChange}
+              sx={{
+                backgroundColor: "secondary.dark",
+                "& .MuiBottomNavigationAction-root": {
+                  color: "selected.color",
+                },
+                "& .Mui-selected, .Mui-selected > svg": {
+                  color: "primary.light",
+                },
+              }}
+            >
+              <BottomNavigationAction
+                value="base"
+                label="Base Services"
+                icon={<PrecisionManufacturingIcon />}
+              />
+              <BottomNavigationAction
+                value="custom"
+                label="Custom Bot"
+                icon={<AutoAwesomeIcon />}
+              />
+              <BottomNavigationAction
+                value="hosting"
+                icon={<StorageIcon />}
+                label="Year of hosting"
+              />
+            </BottomNavigation>
+          </div>
         </Grid>
         {/* End of Grid Item #3 */}
         <Grid item xs={12}>
