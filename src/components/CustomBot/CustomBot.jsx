@@ -25,7 +25,7 @@ function AddCmdService() {
   return (
     <Grid container>
       <Grid item xs={12} sx={{ textAlign: "left", pl: 2 }}>
-        <Typography variant="h5">Custom Bot Services:</Typography>
+        <Typography variant="h4">Custom Bot Services:</Typography>
       </Grid>
       {cardText.map((bot, i) => {
         return (

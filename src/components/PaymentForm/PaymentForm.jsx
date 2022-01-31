@@ -30,15 +30,17 @@ function PaymentForm() {
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ textAlign: "left" }}>
-          <iframe
-            width="100%"
-            height="750"
-            frameBorder="0"
-            title="PaymentForm"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSc7UpUE47WDYvmSdeW3yfuzt0kRHxMdIVOdgm6ClN_v_6t5Rw/viewform?embedded=true"
-          >
-            Loading…
-          </iframe>
+          <div role="form">
+            <iframe
+              width="100%"
+              height="750"
+              frameBorder="0"
+              title="PaymentForm"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSc7UpUE47WDYvmSdeW3yfuzt0kRHxMdIVOdgm6ClN_v_6t5Rw/viewform?embedded=true"
+            >
+              Loading…
+            </iframe>
+          </div>
         </Grid>
         <Grid item md={12} sx={{ textAlign: "center" }}>
           <Button
