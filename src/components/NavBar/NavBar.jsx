@@ -12,6 +12,7 @@ function NavBar() {
   return (
     <Box
       sx={{ p: 2 }}
+      role="navigation"
       color="primary.light"
       backgroundColor="secondary.semiDark"
     >
@@ -21,9 +22,11 @@ function NavBar() {
         </Grid>
 
         <Grid item xs={3} md={8} />
-
         <Grid item xs={3} md={1} onClick={() => navigate("/form")}>
-          <IconButton sx={{ color: "primary.light" }}>
+          <IconButton
+            alt="link to payment form"
+            sx={{ color: "primary.light" }}
+          >
             <PaymentIcon />
           </IconButton>
           <Typography>Interested?</Typography>
@@ -31,6 +34,7 @@ function NavBar() {
 
         <Grid item xs={2} md={1}>
           <IconButton
+            alt="link to creator's github"
             sx={{ color: "primary.light" }}
             onClick={() => {
               window.open("https://github.com/v0ncent");

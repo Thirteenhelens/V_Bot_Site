@@ -67,36 +67,38 @@ function Services() {
         </Grid>
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
-          <BottomNavigation
-            showLabels
-            value={value}
-            onChange={handleChange}
-            sx={{
-              backgroundColor: "secondary.dark",
-              "& .MuiBottomNavigationAction-root": {
-                color: "selected.color",
-              },
-              "& .Mui-selected, .Mui-selected > svg": {
-                color: "primary.light",
-              },
-            }}
-          >
-            <BottomNavigationAction
-              value="base"
-              label="Base Services"
-              icon={<PrecisionManufacturingIcon />}
-            />
-            <BottomNavigationAction
-              value="custom"
-              label="Custom Bot"
-              icon={<AutoAwesomeIcon />}
-            />
-            <BottomNavigationAction
-              value="hosting"
-              icon={<StorageIcon />}
-              label="Year of hosting"
-            />
-          </BottomNavigation>
+          <div role="navigation">
+            <BottomNavigation
+              showLabels
+              value={value}
+              onChange={handleChange}
+              sx={{
+                backgroundColor: "secondary.dark",
+                "& .MuiBottomNavigationAction-root": {
+                  color: "selected.color",
+                },
+                "& .Mui-selected, .Mui-selected > svg": {
+                  color: "primary.light",
+                },
+              }}
+            >
+              <BottomNavigationAction
+                value="base"
+                label="Base Services"
+                icon={<PrecisionManufacturingIcon />}
+              />
+              <BottomNavigationAction
+                value="custom"
+                label="Custom Bot"
+                icon={<AutoAwesomeIcon />}
+              />
+              <BottomNavigationAction
+                value="hosting"
+                icon={<StorageIcon />}
+                label="Year of hosting"
+              />
+            </BottomNavigation>
+          </div>
         </Grid>
         {/* End of Grid Item #3 */}
         <Grid item xs={12}>
