@@ -14,7 +14,7 @@ function HostingService() {
 
   return (
     <Grid container>
-      <Grid item xs={12} sx={{ textAlign: "left", pl:2 }}>
+      <Grid item xs={12} sx={{ textAlign: "left", pl: 2 }}>
         <Typography variant="h4">Hosting Service:</Typography>
       </Grid>
       {cardText.map((bot, i) => {

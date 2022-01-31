@@ -18,7 +18,9 @@ function About() {
               },
             }}
           >
-            <Typography variant="h3" sx={{color:"secondary.dark"}} >About</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              About
+            </Typography>
           </Box>
         </Grid>
         {/* End Grid Item #1 */}
