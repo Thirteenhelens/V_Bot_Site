@@ -5,8 +5,8 @@ function About() {
   return (
     <Box
       color="primary.light"
-      backgroundColor="secondary.dark"
       sx={{ p: 2, height: 2 / 2 }}
+      backgroundColor="secondary.dark"
     >
       {/* Start of Box */}
       <Grid container>

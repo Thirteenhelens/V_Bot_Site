@@ -19,14 +19,12 @@ function PaymentForm() {
           <Box
             borderRadius={10}
             sx={{
-              backgroundColor: "primary.dark",
-              "&:hover": {
-                backgroundColor: "secondary.semiDark",
-                opacity: [0.9, 0.8, 0.7],
-              },
+              backgroundColor: "primary.main",
             }}
           >
-            <Typography variant="h3">Payment Form</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              Payment Form
+            </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} sx={{ textAlign: "left" }}>
