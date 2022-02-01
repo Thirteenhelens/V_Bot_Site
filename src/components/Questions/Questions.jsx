@@ -6,6 +6,8 @@ import { Box, Grid, Typography } from "@mui/material";
 import QuestionItem from "./QuestionItem";
 
 function Questions() {
+  // Here is where all of the questions and answers are stored.
+  // A DB might be a better choice, but I'm rather lazy.
   const faqs = [
     {
       question: "This is a placeholder question",
@@ -30,14 +32,12 @@ function Questions() {
           <Box
             borderRadius={10}
             sx={{
-              backgroundColor: "primary.dark",
-              "&:hover": {
-                backgroundColor: "secondary.semiDark",
-                opacity: [0.9, 0.8, 0.7],
-              },
+              backgroundColor: "primary.main",
             }}
           >
-            <Typography variant="h3">FAQs</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              FAQs
+            </Typography>
           </Box>
         </Grid>
         {faqs.map((item, i) => {

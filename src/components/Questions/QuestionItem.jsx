@@ -37,7 +37,7 @@ function QuestionItem({ item }) {
   return (
     <Card variant="outlined" sx={{ backgroundColor: "secondary.semiDark" }}>
       <CardContent onClick={handleExpandClick}>
-        <Typography variant="h5" color="primary.main">
+        <Typography variant="h4" color="primary.main">
           {item.question}
         </Typography>
       </CardContent>

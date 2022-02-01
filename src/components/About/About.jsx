@@ -15,14 +15,12 @@ function About() {
           <Box
             borderRadius={10}
             sx={{
-              backgroundColor: "primary.dark",
-              "&:hover": {
-                backgroundColor: "secondary.semiDark",
-                opacity: [0.9, 0.8, 0.7],
-              },
+              backgroundColor: "primary.main",
             }}
           >
-            <Typography variant="h3">About</Typography>
+            <Typography variant="h3" sx={{ color: "secondary.dark" }}>
+              About
+            </Typography>
           </Box>
         </Grid>
         {/* End Grid Item #1 */}
