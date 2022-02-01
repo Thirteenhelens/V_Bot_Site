@@ -28,7 +28,8 @@ function Questions() {
   return (
     <Box color="primary.light" backgroundColor="secondary.dark" sx={{ p: 2 }}>
       <Grid container rowSpacing={1} sx={{ p: 4 }}>
-        <Grid item xs={12} sx={{ p: 2, textAlign: "center" }}>
+        <Grid item md={4} />
+        <Grid item xs={12} md={4} sx={{ p: 2, textAlign: "center" }}>
           <Box
             borderRadius={10}
             sx={{
@@ -40,6 +41,8 @@ function Questions() {
             </Typography>
           </Box>
         </Grid>
+        <Grid item md={4} />
+        {/* The empty grid items are there for spacing */}
         {faqs.map((item, i) => {
           return (
             <Grid item xs={12} key={i}>

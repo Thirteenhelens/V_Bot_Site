@@ -11,11 +11,13 @@ function About() {
       {/* Start of Box */}
       <Grid container>
         {/* Start of container */}
-        <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
+        <Grid item md={4} />
+        <Grid item xs={12} md={4} sx={{ p: 1, textAlign: "center" }}>
           <Box
             borderRadius={10}
             sx={{
               backgroundColor: "primary.main",
+              width: 2 / 2,
             }}
           >
             <Typography variant="h3" sx={{ color: "secondary.dark" }}>
@@ -23,6 +25,8 @@ function About() {
             </Typography>
           </Box>
         </Grid>
+        <Grid item md={4} />
+        {/* The empty grid items are there for spacing */}
         {/* End Grid Item #1 */}
         <Grid item xs={12} md={12}>
           <br />

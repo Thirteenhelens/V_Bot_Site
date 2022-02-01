@@ -50,7 +50,8 @@ function Services() {
       {/* Start of Box */}
       <Grid container>
         {/* Start of Container */}
-        <Grid item xs={12} sx={{ p: 1, textAlign: "center" }}>
+        <Grid item md={4} />
+        <Grid item xs={12} md={4} sx={{ p: 1, textAlign: "center" }}>
           <Box
             borderRadius={10}
             sx={{
@@ -62,6 +63,8 @@ function Services() {
             </Typography>
           </Box>
         </Grid>
+        <Grid item md={4} />
+        {/* The empty grid items are there for spacing */}
         {/* End of Grid Item #1 */}
         <Grid item xs={12}>
           <div role="navigation">
