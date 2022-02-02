@@ -13,10 +13,10 @@ function Questions() {
       question: "This is a placeholder question",
       answer: "This is a placeholder answer",
     },
-    { question: "Q2", answer: "A2" },
-    { question: "Q3", answer: "A3" },
-    { question: "Q4", answer: "A4" },
-    { question: "Q5", answer: "A5" },
+    { question: "Another placeholder question", answer: "Another placeholder answer" },
+    { question: "Guess what? ANOTHER placeholder question!", answer: "OMG it's another placeholder answer!" },
+    { question: "You'll never believe this", answer: "PLACEHOLDER" },
+    { question: "Click for a surprise", answer: "BOO! (you should be scared now)" },
   ];
 
   return (
