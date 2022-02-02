@@ -12,6 +12,11 @@ import ContentView from "../ContentView/ContentView.jsx";
 function App() {
   // Theme is what dictates the colors the site uses
   const theme = createTheme({
+    typography: {
+      h3: {
+        fontWeight: 600,
+      },
+    },
     palette: {
       primary: {
         light: "#33ff77",
