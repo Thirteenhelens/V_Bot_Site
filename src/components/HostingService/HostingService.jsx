@@ -15,11 +15,13 @@ function HostingService() {
   return (
     <Grid container>
       <Grid item xs={12} sx={{ textAlign: "left", pl: 2 }}>
-        <Typography variant="h4">Hosting Service:</Typography>
+        <Typography variant="h4">
+          Hosting Service{cardText.length <= 1 ? "" : "s"}:
+        </Typography>
       </Grid>
       {cardText.map((bot, i) => {
         return (
-          <Grid item xs={12} key={i} sx={{ p: 2, textAlign: "center" }}>
+          <Grid item xs={12} md={4} key={i} sx={{ p: 2, textAlign: "center" }}>
             <HostingServiceItem bot={bot} />
           </Grid>
         );
